@@ -1,0 +1,26 @@
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of ActiveNode to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.yml definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using neo4j:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended that you check this file into your version control system.
+
+---
+:constraints:
+- CONSTRAINT ON ( `neo4j::migrations::schemamigration`:`Neo4j::Migrations::SchemaMigration`
+  ) ASSERT `neo4j::migrations::schemamigration`.migration_id IS UNIQUE
+- CONSTRAINT ON ( faculty:Faculty ) ASSERT faculty.code IS UNIQUE
+- CONSTRAINT ON ( faculty:Faculty ) ASSERT faculty.uuid IS UNIQUE
+- CONSTRAINT ON ( univ:Univ ) ASSERT univ.code IS UNIQUE
+- CONSTRAINT ON ( university:University ) ASSERT university.uuid IS UNIQUE
+- CONSTRAINT ON ( 大学:大学 ) ASSERT 大学.code IS UNIQUE
+- CONSTRAINT ON ( 学部:学部 ) ASSERT 学部.code IS UNIQUE
+:indexes: []
+:versions:
+- '20211107134148'
+- '20211107134232'

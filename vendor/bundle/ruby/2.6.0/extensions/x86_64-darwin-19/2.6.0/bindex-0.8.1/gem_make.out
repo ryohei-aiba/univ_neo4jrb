@@ -1,0 +1,15 @@
+current directory: /Users/ryobo/Desktop/task3/myapp/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/ryobo/.rbenv/versions/2.6.6/bin/ruby -I /Users/ryobo/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20211107-1688-1e1r3ug.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ryobo/Desktop/task3/myapp/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/ryobo/Desktop/task3/myapp/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/ryobo/Desktop/task3/myapp/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20211107-1688-l2kkpl/skiptrace/internal
